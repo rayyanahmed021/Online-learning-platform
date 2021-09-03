@@ -1,0 +1,157 @@
+li.nav-item{
+    margin: auto;
+}
+
+body,html{
+    height: 100%;
+    flex-wrap: wrap;
+}
+ul.nav{
+    display: flex;
+      
+    
+}
+@keyframes slide{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 500px;
+    }
+}
+@keyframes unslide{
+    from{
+        height: 500px;
+
+    }
+    to{
+        height: 0px;
+    }
+}
+@keyframes fade{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+ul.nav a{
+    color: white;
+}
+ul.nav a:hover{
+    background-color: white;
+    border-radius: 20px;
+    color: #293352;
+    transition:0.5s;
+}
+div.alert{
+    position: relative;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-play-state: paused;
+    text-align: center;
+}
+div#shit{
+    position: relative;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+iframe#video{
+    position: relative;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+div#layout{
+    background-color: #293352;
+}
+div#layout>h1 {
+    color: white;
+    text-align: center;
+}
+div#layout>div{
+color: white;
+}
+div.form-group{
+    left:10px;
+}
+div#nav{
+    text-align: center;
+    
+}
+div.form-group>button#Create{
+margin-left: 15px;
+}
+#bg{
+    background-position: center;
+    position: relative;
+}
+#heading{
+    padding: 10px;
+}
+div#course div span#timestamp{
+color: grey;
+}
+@media screen and (max-width: 700px) {
+    ul.nav {   
+      flex-direction: column;
+    }
+    
+    
+  }
+div#course> div#elementy{
+    display: flex;
+  
+
+}
+div#course{
+    justify-content: center; 
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+@keyframes tutti{
+    0%{
+transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0px);
+
+    }
+}
+  i{
+    margin: auto;
+}
+div#preview>button#edit{
+    display: grid;
+    margin: auto;
+}
+div#preview>button#goto{
+    display: grid;
+    margin: auto;
+}
+div>div#flag{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+}
+div#flag>span#party{
+    color: grey;
+
+}
+div#flag>i.fas{
+    position: relative;
+    
+    color: green;
+}
+
+
+
+

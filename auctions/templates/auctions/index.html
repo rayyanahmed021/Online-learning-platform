@@ -1,0 +1,36 @@
+{% extends "auctions/layout.html" %}
+{% load static %}
+
+{% block body %}
+<script src="{% static 'auctions/index.js' %}"></script>
+<script src="https://kit.fontawesome.com/f48842256c.js" crossorigin="anonymous"></script>
+
+<link href="{% static 'auctions/styles.css' %}" rel="stylesheet">
+
+<div id = "bg">
+
+</div>
+
+<div id = "course">
+
+</div>
+<div id = "lecture"></div>
+<div class = "form-group">
+<div class = "col-md-5 mb-3">     
+    <label>Title:</label><input type="text" id = "title" class = "form-control" placeholder="Title">
+</div>
+
+<div class = "col-md-10 mb-3">     
+    <label>Syllabus:</label>
+        <textarea type="text" id = "syllabus" class = "form-control" placeholder="Syllabus"></textarea>
+        <small  class="form-text text-muted">
+            Add a comma after every syllabus content</small>
+</div>
+<div class = "col-md-5 mb-3">     
+    <label>Image Link</label><input type="url" id = " image"class = "form-control" placeholder="Image-Link">
+</div>
+<button id ="Creaty" class = "btn btn-primary">Create</button>
+
+</div>
+
+{% endblock %}
